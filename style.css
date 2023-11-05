@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+html {
+  font-family: Arial;
+  font-size: 30px;
+  user-select: none;
+  cursor: grab;
+  overflow: hidden;
+}
+
+body {
+  background-color: azure;
+}
+
+p {
+  font-family: "Press Start 2P", cursive;
+}
+
+img {
+  pointer-events: none;
+}
+#scoresystem {
+  position: absolute;
+  top: auto;
+  left: 0px;
+  padding: 10px;
+  border: 3px solid royalblue;
+}
+
+#bucket {
+  position: relative;
+  top: 600px;
+  left: 400px;
+}
+
+#win {
+  z-index: 10;
+
+  height: auto;
+  font-size: 50px;
+  font-weight: bold;
+  left: 0px;
+  text-align: center;
+
+  color: #3498db;
+  text-transform: uppercase;
+}
+
+@keyframes coolTextAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+.cool-text {
+  font-size: 36px;
+  color: #3498db;
+  text-transform: uppercase;
+  animation: coolTextAnimation 2s infinite;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-20px) rotate(20deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-20px) rotate(-20deg);
+  }
+}
+
+.winning-dance {
+  animation: spin 2s linear infinite;
+}
+
+.modern-button {
+  background-color: #3498db; /* Button background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.modern-button:hover {
+  background-color: #258cd1; /* Button background color on hover */
+}
+
+.game {
+  width: 100%;
+}
+
+/* Add this CSS class to control the fading animation */
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
