@@ -1,3 +1,5 @@
-You can view the demo of this project on GitHub:
+## Demo
 
-[Demo Link]([https://github.com/ofekshmuely/bucket-assignment](https://ofekshmuely.github.io/bucket-assignment/)https://ofekshmuely.github.io/bucket-assignment/)
+You can view the live demo of this project by visiting the following URL:
+
+[Demo Link](https://ofekshmuely.github.io/bucket-assignment/)
